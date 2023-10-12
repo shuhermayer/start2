@@ -1,11 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="./utils.js"></script>
+  <title>Document</title>
 </head>
 <body>
-    asdfasdf
+  <div style="position: fixed; left: 50%; top: 50px; transform: translate(-50%, -50%); z-index: 9999;">
+    <nav>
+      <div class="menu-item"><a href="#">Home</a></div>
+      <div class="menu-item"><a href="#competences">Competences</a></div>
+      <div class="menu-item"><a href="#skills">Skills</a></div>
+      <div class="menu-item"><a href="#projects">Projects</a></div>
+      <div class="menu-item"><a href="#hire">Hire me</a></div>
+    </nav>
+  </div>
+  <div class="top-container">
+    <span class="top-text">Web developer team for your start-up projects</span>
+    <img src="/assets/topimg.png" alt="" style="position: relative; right: 0; top: 0; z-index: 10;">
+  </div>
+  
+  <div class="main-container">
+    <div class="section" id="competences">
+      <h1>Competences</h1>
+      <span>Why hire me for your next project?</span>
+      <div class="card-wrapper">
+
+        <div class="competence-card">
+          <div class="competence-icon">
+            <img src="/assets/icons/management.svg" alt="" style="position: absolute;">
+            <img src="/assets/icons/bg.svg" alt="">
+          </div>
+          <div class="card-text">
+            <span class="card-text-title">Project Management</span>
+            <span class="card-text-sub">Управление разработкой проекта. Работа по спринтам, прогнозируемая доставка релизов</span>
+          </div>
+        </div>
+
+        <div class="competence-card">
+          <div class="competence-icon">
+            <img src="/assets/icons/seo.svg" alt="" style="position: absolute; ">
+            <img src="/assets/icons/bg.svg" alt="">
+          </div>
+          <div class="card-text">
+            <!-- TODO заменить иконку. речь о другом SEO -->
+            <span class="card-text-title">SEO strategy</span>
+            <span class="card-text-sub">Координация работы продукта, выработка решений по развитию проекта</span>
+          </div>
+        </div>
+
+        <div class="competence-card">
+          <div class="competence-icon">
+            <img src="/assets/icons/architecture.svg" alt="" style="position: absolute;">
+            <img src="/assets/icons/bg.svg" alt="">
+          </div>
+          <div class="card-text">
+            <span class="card-text-title">Architecture</span>
+            <span class="card-text-sub">Разработка архитектурных решений продукта и его интеграций с внешними сервисами</span>
+          </div>
+        </div>
+
+        <div class="competence-card">
+          <div class="competence-icon">
+            <img src="/assets/icons/documentation.svg" alt="" style="position: absolute; ">
+            <img src="/assets/icons/bg.svg" alt="">
+          </div>
+          <div class="card-text">
+            <span class="card-text-title">Dev documentation</span>
+            <span class="card-text-sub">Написание документации проекта и ее поддержание в актуальном состоянии</span>
+          </div>
+        </div>
+
+        <div class="competence-card">
+          <div class="competence-icon">
+            <img src="/assets/icons/react.png" alt="" style="position: absolute;">
+            <img src="/assets/icons/bg.svg" alt="">
+          </div>
+          <div class="card-text">
+            <span class="card-text-title">React frontend</span>
+            <span class="card-text-sub">Высокая производительность и масштабируемость интерфейса при создании современных, отзывчивых и интерактивных веб-приложений</span>
+          </div>
+        </div>
+
+        <div class="competence-card">
+          <div class="competence-icon">
+            <img src="/assets/icons/rapid.svg" alt="" style="position: absolute;">
+            <img src="/assets/icons/bg.svg" alt="">
+          </div>
+          <div class="card-text">
+            <span class="card-text-title">Rapid Prototyping</span>
+            <span class="card-text-sub">Выстрая реализация прототипов на стороне backend</span>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="section-tech">
+      <h1>Technology</h1>
+      <div class="competences-wrapper">
+        <div class="competence-icon">
+          <div class="img-fade-containter">
+            <img class="image" src="/assets/icons/tech/icons8-html5.svg" alt="">
+            <img class="image"  src="/assets/icons/tech/icons8-html5_white.svg" alt="">
+          </div>
+        </div>
+        <div class="competence-icon">
+          <div class="img-fade-containter">
+            <img class="image" src="/assets/icons/tech/icons8-flutter.svg" alt="">
+            <img class="image"  src="/assets/icons/tech/icons8-flutter_white-01.svg" alt="">
+          </div>
+        </div>
+        <div class="competence-icon">
+          <div class="img-fade-containter">
+            <img class="image" src="/assets/icons/tech/icons8-node-js.svg" alt="">
+            <img class="image"  src="/assets/icons/tech/icons8-node-js_white.svg" alt="">
+          </div>
+        </div>
+        <div class="competence-icon">
+          <img src="/assets/icons/technology/CSS.png" alt="">
+        </div>
+        <div class="competence-icon">
+          <div class="img-fade-containter">
+            <img class="image" src="/assets/icons/tech/icons8-firebase.svg" alt="">
+            <img class="image"  src="/assets/icons/tech/icons8-firebase-white.svg" alt="">
+          </div>
+        </div>
+        <div class="competence-icon">
+          <div class="img-fade-containter">
+            <img class="image" src="/assets/icons/tech/icons8-react.svg" alt="">
+            <img class="image"  src="/assets/icons/tech/icons8-react_white.svg" alt="">
+          </div>
+        </div>
+        <div class="competence-icon">
+          <div class="img-fade-containter">
+            <img class="image" src="/assets/icons/tech/icons8-postgresql.svg" alt="">
+            <img class="image"  src="/assets/icons/tech/icons8-postgresql_white.svg" alt="">
+          </div>
+        </div>
+        <div class="competence-icon">
+          <div class="img-fade-containter">
+            <img class="image" src="/assets/icons/tech/icons8-redux.svg" alt="">
+            <img class="image"  src="/assets/icons/tech/icons8-redux_white.svg" alt="">
+          </div>
+        </div>
+        <div>
+          <span>Lorem ipsum dolor sit amet consectetur. Duis rhoncus nisl rhoncus accumsan tellus cras vestibulum bibendum mauris. Ullamcorper elit sed aliquam adipiscing condimentum consectetur porttitor. Morbi eu egestas ut vel ut quam est. Bibendum tortor sed sit turpis quisque.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-tech" id="skills">
+      <h1>Personal Skills</h1>
+      <div class="card-wrapper">
+        <div class="competence-icon">
+          <img src="/assets/team.png" alt="">
+        </div>
+        <div>
+          <span>Lorem ipsum dolor sit amet consectetur. Duis rhoncus nisl rhoncus accumsan tellus cras vestibulum bibendum mauris. Ullamcorper elit sed aliquam adipiscing condimentum consectetur porttitor. Morbi eu egestas ut vel ut quam est. Bibendum tortor sed sit turpis quisque.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-projects" id="projects">
+      <h1>Projects</h1>
+      <div class="article">
+        <div class="card-text-sub">Судя по сгенерированному изображению макета, это проект по выращиванию каких-то биотехнических устройств. Вероятно заказ был сделан совместно министерством промышленности и Минцифры </div>
+        <img src="/assets/projects/portfolio1.png" alt="" width="500px" height="500px">
+      </div>
+      <div class="article">
+        <img src="/assets/projects/portfolio2.png" alt="" width="500px" height="500px">
+        <div class="card-text-sub">Простой но эффектный лэндинг для дальнейшей подписки на услуги организации рабочего пространства у в офисах.</div>
+      </div>
+      <div class="article">
+        <div class="card-text-sub">Хорроу шутер, работающий на WebGL. На самом деле просто очередная сгенерированная нейросетью картинка с включённой опцией хэллоунизации изображения.</div>
+        <img src="/assets/projects/portfolio3.png" alt="" width="500px" height="500px">
+      </div>
+      <div class="article">
+        <img src="/assets/projects/portfolio4.png" alt="" width="500px" height="500px">
+        <div class="card-text-sub">Сервис поиска граждан с отсутствующим чувством вкуса для рекомендаций им обучения или изучения инструкций. В основном сервис о том, что синее спортивное трико — это не универсальное решение, а модный только в узких кругах стаф, который актуален только в сочетании с семками и кэпкой</div>
+      </div>
+    </div>
+
+    <div class="section-projects" id="hire">
+      <div class="article">
+        <div class="hireme">
+          <h2 style="color: #333;">Опишите задачу</h2>
+          <input type="text" placeholder="Ваш email" style="height: 60px; border-radius: 5px; border: 0; padding-left: 10px; font-size: 16px;">
+          <textarea placeholder="Что хотим?" name="message" id="message" cols="1" rows="6" style=" border-radius: 5px; border: 0; padding-left: 10px; font-size: 16px;"></textarea>
+          <div style="text-align: center;"><button>Спросить</button></div>
+        </div>
+          
+      </div>
+    </div>
+
+    
+  </div>
 </body>
 </html>
