@@ -14,8 +14,19 @@ nav {
   justify-content: space-between;
   align-items: center;
   border-radius: 15px;
-  background: #6b6b6bd6;
+  background: #6b6b6bd2;
   
+}
+
+.test{
+  display: flex;
+  width: 464px;
+  padding: 11px 33px 11px 34px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  background: #6b6b6b00;
+  opacity: 0;
 }
 
 .menu-item a {
@@ -25,18 +36,16 @@ nav {
   align-items: center;
   gap: 12px;
   color: #F2F2F2;
-  font-size: 11px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  border: 1px solid #FFFFFF00;
   text-decoration: none;
 }
 
 .menu-item a:hover {
-  border: 1px solid #FFF;
-  border-radius: 5px;
-  transition: border 300ms;
+  text-decoration: underline;
+  transition: all 3000ms;
 }
 
 .top-text {
